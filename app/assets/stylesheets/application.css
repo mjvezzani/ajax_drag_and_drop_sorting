@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
+.article-box {
+  border: 1px solid #444;
+}

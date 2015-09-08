@@ -1,0 +1,8 @@
+<h1>The Articles</h1>
+
+<% @articles.each do |article| %>
+  <div class='article-box'>
+    <h3><%= article.title %></h3>
+    <p><%= article.body %></p>
+  </div>
+<% end %>
