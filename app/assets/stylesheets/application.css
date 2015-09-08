@@ -17,3 +17,10 @@
 .article-box {
   border: 1px solid #444;
 }
+
+.sortable-placeholder {
+  border: 1px dashed #CCC;
+  background-color: #F9F9F9;
+  height: 80px;
+  margin-bottom: 10px;
+}

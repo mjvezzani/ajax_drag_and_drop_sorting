@@ -43,4 +43,11 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
     @article.destroy
   end
+
+  def sort
+    params[:order].each do |key, value|
+      Article.find(value[:id]).update_attribute(:rank, value[:position])
+    end
+    render nothing: true
+  end
 end
